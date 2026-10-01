@@ -1,0 +1,12 @@
+POST http://localhost:3000/api/events
+Content-Type: application/json
+
+{
+  "targetUrl": "https://webhook.site/6c8e21df-24c7-4823-8d43-49969a56b779",
+  "payload": {
+    "userId": "usr_123",
+    "event": "payment_success",
+    "amount": 4900
+  },
+  "secret": "whsec_my_super_secret_key"
+}
